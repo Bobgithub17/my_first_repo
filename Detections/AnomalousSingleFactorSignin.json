@@ -28,7 +28,7 @@
           "InitialAccess"
         ],
         "techniques": [
-          "T1078.004"
+          "T1078"
         ],
         "entityMappings": [
           {
