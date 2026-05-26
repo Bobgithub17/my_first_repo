@@ -14,8 +14,12 @@ on:
     branches: [ main ]
     paths:
     - '**'
+    # - 'SentinelContent/**' #### demo use only ####
     - '!.github/workflows/**'  # this filter prevents other workflow changes from triggering this workflow
     - '.github/workflows/sentinel-deploy-53f3c4af-9d56-4b3a-8a85-5539bfd2b5ce.yml'
+
+  # schedule: #### demo use only ####
+  #   - cron: '0 0 * * *'   # runs every day at 00:00 UTC
 
 jobs:
   deploy-content:
@@ -25,6 +29,7 @@ jobs:
       workspaceName: 'law1-bob'
       workspaceId: 'bb66b3d2-ec3b-4071-b69d-cf803f6bd72a'
       directory: '${{ github.workspace }}'
+      # directory: '${{ github.workspace }}/SentinelContent' #### demo use only ####
       cloudEnv: 'AzureCloud'
       contentTypes: 'AnalyticsRule,AutomationRule,HuntingQuery,Parser,Playbook,Workbook,Watchlist'
       branch: 'main'
