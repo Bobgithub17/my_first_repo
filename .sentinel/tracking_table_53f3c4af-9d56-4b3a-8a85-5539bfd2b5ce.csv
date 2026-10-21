@@ -1,3 +1,5 @@
 FileName, CommitSha
+Analytics Rule/MalformedUserAgents.json,a2d24f9f9756b7633b0e24df8f2118e4f85a73ce
+Automation Rule/ChangeOwnerPersistenceIncidents.json,c953a2f4cfc3dd12cbe3376bceada594b2d55116
 Detections/AnomalousSingleFactorSignin.json,2429fdfac81951f4b2a3d3f751fe5620e107e922
 
